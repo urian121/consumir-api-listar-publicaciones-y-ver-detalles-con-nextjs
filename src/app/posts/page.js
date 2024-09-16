@@ -1,6 +1,21 @@
 import Link from "next/link";
 import { GrLinkNext } from "react-icons/gr";
+import axios from "axios";
 
+async function getPosts() {
+  const url_posts = "https://jsonplaceholder.typicode.com/posts";
+
+  try {
+    const response = await axios.get(url_posts);
+    return response.data;
+  } catch (error) {
+    console.error("Error en la petición al servidor", error);
+    // Puedes devolver un array vacío o manejar el error de otra manera
+    return [];
+  }
+}
+
+/*
 async function getPosts() {
   let url_posts = "https://jsonplaceholder.typicode.com/posts";
 
@@ -13,9 +28,9 @@ async function getPosts() {
   }
 
   const data = await res.json();
-  //console.log("publicaciones", data);
   return data;
 }
+*/
 
 export default async function Post() {
   const data = await getPosts();
