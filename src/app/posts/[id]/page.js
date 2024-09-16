@@ -3,6 +3,8 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { IoArrowBack } from "react-icons/io5";
 
+import Comentarios from "../../components/Comentarios";
+
 // Función para obtener los detalles de un post específico
 async function getPostData(id) {
   const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`);
@@ -42,18 +44,24 @@ export default function Detalles({ params }) {
   }
 
   return (
-    <div className="col-md-10 mb-4">
-      <div className="card h-100" style={{ borderRadius: "0px" }}>
-        <div className="card-body">
-          <h3 className="card-title fw-bold">{post.title}</h3>
-          <p className="card-text">{post.body}</p>
-        </div>
-        <div className="card-footer">
-          <Link href={`/posts/`} className="btn btn-primary">
-            <IoArrowBack /> &nbsp; Volver atras
-          </Link>
+    <>
+      <div className="col-md-12 mb-5">
+        <h2 className="text-center fw-bold">
+          Detalles del Post # {idPost} <hr />
+        </h2>
+        <div className="card h-100" style={{ borderRadius: "0px" }}>
+          <div className="card-body">
+            <h3 className="card-title fw-bold text-capitalize">{post.title}</h3>
+            <p className="card-text">{post.body}</p>
+          </div>
+          <div className="card-footer">
+            <Link href={`/posts/`} className="btn btn-primary">
+              <IoArrowBack /> &nbsp; Volver atras
+            </Link>
+          </div>
         </div>
       </div>
-    </div>
+      <Comentarios postId={idPost} />
+    </>
   );
 }

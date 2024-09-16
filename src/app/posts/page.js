@@ -15,23 +15,6 @@ async function getPosts() {
   }
 }
 
-/*
-async function getPosts() {
-  let url_posts = "https://jsonplaceholder.typicode.com/posts";
-
-  const res = await fetch(url_posts, {
-    cache: "no-store",
-  });
-
-  if (!res.ok) {
-    console.log("error en la petición al servidor");
-  }
-
-  const data = await res.json();
-  return data;
-}
-*/
-
 export default async function Post() {
   const data = await getPosts();
 
@@ -44,7 +27,7 @@ export default async function Post() {
         <div key={post.id} className="col-md-10 mb-4">
           <div className="card h-100" style={{ borderRadius: "0px" }}>
             <div className="card-body">
-              <h3 className="card-title fw-bold">{post.title}</h3>
+              <h3 className="card-title fw-bold text-capitalize">{post.title}</h3>
               <p className="card-text">{post.body}</p>
             </div>
             <div className="card-footer">

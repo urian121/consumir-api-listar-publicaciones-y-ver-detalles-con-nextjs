@@ -8,6 +8,10 @@ Este proyecto te enseña a consumir una API utilizando Next.js para listar publi
 
 ![](https://raw.githubusercontent.com/urian121/imagenes-proyectos-github/master/lista-posts-con-nextjs.png)
 
+#### Detalles del Post y sus Comentarios
+
+![](https://raw.githubusercontent.com/urian121/imagenes-proyectos-github/master/detalles-del-post-nextjs.png)
+
 #### Características principales
 
 - Consumo de API RESTful para obtener publicaciones.
