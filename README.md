@@ -1,36 +1,31 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Domina la forma de consumir API, listar publicaciones y ver detalles con Next.js
 
-## Getting Started
+#### Descripción
 
-First, run the development server:
+Este proyecto te enseña a consumir una API utilizando Next.js para listar publicaciones y mostrar los detalles de cada una. Implementa rutas dinámicas para navegar entre la lista de posts y sus detalles. Además, aprenderás a manejar el estado de los datos y optimizar la carga de información desde el servidor.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+#### Características principales
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Consumo de API RESTful para obtener publicaciones.
+- Listado de posts dinámico con paginación o carga infinita.
+- Visualización detallada de cada publicación mediante rutas dinámicas.
+- Optimización de la carga de datos desde el servidor.
+- Manejo de errores y estados de carga (loading/spinner).
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+#### Instalar Bootstrap 5 en NextJS
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+    https://www.youtube.com/watch?v=yzNCrBOqvto
 
-## Learn More
+    https://github.com/urian121/guia-completa-para-integrar-Bootstrap5-en-Nextjs14
 
-To learn more about Next.js, take a look at the following resources:
+#### Instalar las dependencias
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+    npm install
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+#### Ejecuta la aplicación en modo desarrollo
 
-## Deploy on Vercel
+    npm run dev
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+##### Nota
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+En Next.js, una carpeta con nombre entre corchetes, como [id], define una ruta dinámica. Esto permite que el nombre de la URL se convierta en un parámetro, por ejemplo, /posts/1 donde id es el valor dinámico (1)
