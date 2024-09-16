@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { GrLinkNext } from "react-icons/gr";
 
 async function getPosts() {
   let url_posts = "https://jsonplaceholder.typicode.com/posts";
@@ -12,7 +13,7 @@ async function getPosts() {
   }
 
   const data = await res.json();
-  console.log("publicaciones", data);
+  //console.log("publicaciones", data);
   return data;
 }
 
@@ -23,6 +24,7 @@ export default async function Post() {
     <>
       <h2 className="text-center fw-bold mb-4">Lista de Posts Recientes</h2>
       <hr />
+
       {data.map((post) => (
         <div key={post.id} className="col-md-10 mb-4">
           <div className="card h-100" style={{ borderRadius: "0px" }}>
@@ -32,7 +34,8 @@ export default async function Post() {
             </div>
             <div className="card-footer">
               <Link href={`/posts/${post.id}`} className="btn btn-primary">
-                Ver Detalles
+                Ver Detalles &nbsp;
+                <GrLinkNext />
               </Link>
             </div>
           </div>

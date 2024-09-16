@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { IoArrowBack } from "react-icons/io5";
 
 // Función para obtener los detalles de un post específico
 async function getPostData(id) {
@@ -38,7 +39,7 @@ export default function Detalles({ params }) {
   }
 
   if (!post) {
-    return <p>Loading...</p>;
+    return <p>Cargando...</p>;
   }
 
   return (
@@ -50,7 +51,7 @@ export default function Detalles({ params }) {
         </div>
         <div className="card-footer">
           <Link href={`/posts/`} className="btn btn-primary">
-            Volver atras
+            <IoArrowBack /> &nbsp; Volver atras
           </Link>
         </div>
       </div>
