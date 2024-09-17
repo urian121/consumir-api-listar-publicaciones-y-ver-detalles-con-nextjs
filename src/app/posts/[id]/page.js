@@ -40,7 +40,13 @@ export default function Detalles({ params }) {
   }
 
   if (!post) {
-    return <p>Cargando...</p>;
+    return (
+      <div className="col-md-12 mb-5">
+        <h2 className="text-center fw-bold">
+          Cargando detalles del Post # {idPost} <hr />
+        </h2>
+      </div>
+    );
   }
 
   return (

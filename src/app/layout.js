@@ -2,7 +2,7 @@ import localFont from "next/font/local";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import NavBar from "./components/Navbar";
-import "./globals.css";
+import "./styles/globals.css";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <NavBar />
         <div className="container">
-          <div className="row justify-content-md-center mt-5">{children}</div>
+          <div className="row justify-content-md-center mt-2">{children}</div>
         </div>
       </body>
     </html>
