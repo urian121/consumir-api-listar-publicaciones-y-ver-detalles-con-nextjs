@@ -6,6 +6,8 @@ Este proyecto te enseña a consumir una API utilizando Next.js para listar publi
 
 #### Resultado final
 
+![](https://raw.githubusercontent.com/urian121/imagenes-proyectos-github/master/api-rutas-post-con-nextjs.gif)
+
 ![](https://raw.githubusercontent.com/urian121/imagenes-proyectos-github/master/lista-posts-con-nextjs.png)
 
 #### Detalles del Post y sus Comentarios
