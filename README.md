@@ -36,6 +36,10 @@ Este proyecto te enseña a consumir una API utilizando Next.js para listar publi
 
     npm run dev
 
+#### Visitar
+    
+    http://localhost:3000
+
 ##### Nota
 
 En Next.js, una carpeta con nombre entre corchetes, como [id], define una ruta dinámica. Esto permite que el nombre de la URL se convierta en un parámetro, por ejemplo, /posts/1 donde id es el valor dinámico (1)
