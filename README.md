@@ -17,7 +17,7 @@ Este proyecto te enseña a consumir una API utilizando Next.js para listar publi
 #### Características principales
 
 - Consumo de API RESTful para obtener publicaciones.
-- Listado de posts dinámico con paginación o carga infinita.
+- Listado de posts.
 - Visualización detallada de cada publicación mediante rutas dinámicas.
 - Optimización de la carga de datos desde el servidor.
 - Manejo de errores y estados de carga (loading/spinner).
